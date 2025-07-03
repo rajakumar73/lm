@@ -33,7 +33,7 @@ fetchRedirectLists().then(({ link1, link2, link3 }) => {
   } else if (link3.includes(fileID)) {
     redirectToHost("link3", fileID);
   } else {
-    showMessage(`No redirect rule for File ID: ${fileID}`);
+    showMessage(`No redirect rule found for File ID: ${fileID}`);
   }
 }).catch(err => {
   console.error("Error loading JSON data:", err);
